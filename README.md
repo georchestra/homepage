@@ -9,6 +9,7 @@ This repository is about providing development environment to build geOrchestra 
 ## Quickstart
 
 To start the home page in local dev environment:
+
 ```
 npm install
 npm run start
@@ -16,17 +17,18 @@ npm run start
 
 ## Scripts
 
-- `dev:home` run home page in dev mode
-- `dev:header` run header in dev mode
-- `build:home` builds home page and outputs it in your `dist/home` directory
-- `build:header` builds header and outputs it in your `dist/header` directory
+- `dev` run home page in dev mode
+- `build:home` builds home page and outputs it in your `dist` directory
 - `format` runs prettier format in write mode
 
 ## Deploy
-To build an application, run `npm run build:{yourApp}`.
-Copy the resources built in `./dist/{yourApp}` folder to your web server.
+
+To build an application, run `npm run build`.
+
+Copy the resources built in `./dist/` folder to your web server.
 
 ## Tech
+
 - [Vite](https://vitejs.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
 - prettier
