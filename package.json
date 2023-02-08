@@ -1,0 +1,38 @@
+{
+  "name": "@georchestra/homepage",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=16"
+  },
+  "description": "Sources for geOrchestra static pages generation eg header, home page etc...",
+  "scripts": {
+    "start": "npm run dev:home",
+    "dev:home": "vite src/homepage",
+    "dev:header": "vite src/header",
+    "build:home": "vite build src/homepage --outDir=../../dist/home",
+    "build:header": "vite build src/header --outDir=../../dist/header",
+    "preview": "vite preview",
+    "format": "prettier --write --list-different .",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georchestra/homepage.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.1",
+    "postcss": "^8.4.21",
+    "prettier": "2.8.4",
+    "tailwindcss": "^3.2.4"
+  },
+  "lint-staged": {
+    "*.js|*.html": [
+      "npm run format"
+    ]
+  },
+  "dependencies": {
+    "vite": "^4.1.1"
+  }
+}

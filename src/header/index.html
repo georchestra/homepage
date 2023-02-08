@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Header geOrchestra</title>
+
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body class="bg-secondary h-screen justify-between flex flex-col">
+    <header
+      class="border-b-2 border-primary lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2"
+    >
+      <div class="flex-1 flex justify-between items-center">
+        <a href="#">
+          <img
+            src="https://www.georchestra.org/public/georchestra-logo.svg"
+            alt="un triangle aux trois côtés égaux"
+            height="87px"
+            width="100px"
+          />
+        </a>
+      </div>
+
+      <label for="menu-toggle" class="pointer-cursor lg:hidden block"
+        ><svg
+          class="fill-current text-gray-900"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+        >
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
+      ></label>
+      <input class="hidden" type="checkbox" id="menu-toggle" />
+
+      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <nav>
+          <ul
+            class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0"
+          >
+            <li>
+              <a
+                class="text-primary lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                href="#"
+                >connexion</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
